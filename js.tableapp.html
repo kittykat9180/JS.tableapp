@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Projects</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
+</head>
+<!-- Table of students, projects, and submissions -->
+<body class="container">
+    <br>
+    <div class="card border-info">
+        <div class="card-body">
+            <h3 class="text-primary">Student Project Submissions</h3>
+            <div class="row">
+                <div  class="col-sm">
+                    <div class="form-group">
+                    <label for="student-fn">Student First name</label>
+                    <input type="text" class="form-control" id="student-fn">
+                    </div>
+                </div>
+                <div  class="col-sm">
+                    <div class="form-group">
+                        <label for="student-ln">Student Last name</label>
+                        <input type="text" class="form-control" id="student-ln">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div  class="col-sm">
+                    <div class="form-group">
+                    <label for="project-name">Project name</label>
+                    <input type="text" class="form-control" id="project-name">
+                    </div>
+                </div>
+                <div  class="col-sm">
+                    <div class="form-group">
+                        <label for="sub-date">Submission Date</label>
+                        <input type="date" class="form-control" id="sub-date">
+                    </div>
+                </div>
+            </div>
+            <button id="add" class="btn btn-info form-control" style="width: 100px">Save</button>
+        </div>
+    </div>
+    <br>
+    <table id="list" class="table table-info table-striped">
+        <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Project Name</th>
+            <th>Submitted</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <script src="tableapp.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
